@@ -23,6 +23,7 @@ body{
 
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -88,12 +89,14 @@ p{
 button{
     background-color: var(--very-light-gray);
     font-family: var(--big-shoulders-display);
-    padding: 15px 5px;
-    border: 0;
+    cursor: pointer;
+    padding: 12px 5px;
     border-radius: 20px;
     width: 145px;
     position: absolute;
     bottom: 40px;
+    border: 2px solid var(--very-light-gray); 
+
 }
 
 .sedans button{
@@ -109,21 +112,29 @@ button{
 }
 
 .sedans button:hover{
-    background-color: var(--bright-orange);
-    color: var(--very-light-gray);
-    border: 2px solid var(--very-light-gray); 
+    background: var(--bright-orange);
+    color: var(--transparent-white);
 }
 
 .suv button:hover{
     background-color: var(--dark-cyan);
     color: var(--very-light-gray);
-    border: 2px solid var(--very-light-gray); 
 }
 
 .luxury button:hover{
     background-color: var(--very-dark-cyan);
     color: var(--very-light-gray);
-    border: 2px solid var(--very-light-gray); 
+}
+
+.identification{
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+}
+
+a{
+    
 }
 
 @media screen and (min-width:1024px){
@@ -131,13 +142,14 @@ button{
     main{
         height: 100vh;
     }
-    
+
     .cards{
         flex-direction: row;
     }
 
     .sedans, .suv, .luxury{
     max-width: 200px;
+    height: 420px;
 
     }
 
