@@ -21,6 +21,13 @@ body{
     background-color: var(--very-light-gray);
 }
 
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .cards{
     display: flex;
     flex-direction: column;
@@ -30,9 +37,6 @@ body{
 }
 
 .sedans{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     background-color: var(--bright-orange);
     max-width: 375px;
     height: 380px;
@@ -45,9 +49,6 @@ body{
 }
 
 .suv{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     background-color: var(--dark-cyan);
     max-width: 375px;
     height: 380px;
@@ -59,9 +60,6 @@ body{
 }
 
 .luxury{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     background-color: var(--very-dark-cyan);
     max-width: 375px;
     height: 380px;
@@ -131,11 +129,8 @@ button{
 
 @media screen and (min-width:1024px){
 
-    
     .cards{
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
     }
 
     .sedans, .suv, .luxury{
