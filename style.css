@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+
+}
+
+body{
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 20px;
+}
+
+.sedans{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--bright-orange);
+    max-width: 375px;
+    height: 400px;
+    padding-top: 40px;
+    padding-right: 60px;
+    padding-left: 40px;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.suv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--dark-cyan);
+    max-width: 375px;
+    height: 400px;
+    padding-top: 40px;
+    padding-right: 60px;
+    padding-left: 40px;
+    position: relative;
+
+}
+
+.luxury{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--very-dark-cyan);
+    max-width: 375px;
+    height: 400px;
+    padding-top: 40px;
+    padding-right: 60px;
+    padding-left: 40px;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+
+}
+
+h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+}
+
+p{
+    color: var(--transparent-white);
+}
+
+
+
+button{
+    background-color: var(--very-light-gray);
+    padding: 15px 5px;
+    border: 0;
+    border-radius: 20px;
+    width: 145px;
+    position: absolute;
+    bottom: 40px;
+}
+
+.sedans button{
+    color: var(--bright-orange);
+}
+
+.suv button{
+    color: var(--dark-cyan);
+}
+
+.luxury button{
+    color: var(--very-dark-cyan);
+}
