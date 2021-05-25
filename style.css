@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +11,8 @@
     --very-dark-cyan: hsl(179, 100%, 13%);
     --transparent-white: hsla(0, 0%, 100%, 0.75);
     --very-light-gray: hsl(0, 0%, 95%);
+    --lexend-deca: 'Big Shoulders Display', cursive;
+    --big-shoulders-display: 'Lexend Deca', sans-serif;
 
 }
 
@@ -31,8 +35,8 @@ body{
     align-items: flex-start;
     background-color: var(--bright-orange);
     max-width: 375px;
-    height: 400px;
-    padding-top: 40px;
+    height: 380px;
+    padding-top: 50px;
     padding-right: 60px;
     padding-left: 40px;
     position: relative;
@@ -46,8 +50,8 @@ body{
     align-items: flex-start;
     background-color: var(--dark-cyan);
     max-width: 375px;
-    height: 400px;
-    padding-top: 40px;
+    height: 380px;
+    padding-top: 50px;
     padding-right: 60px;
     padding-left: 40px;
     position: relative;
@@ -60,8 +64,8 @@ body{
     align-items: flex-start;
     background-color: var(--very-dark-cyan);
     max-width: 375px;
-    height: 400px;
-    padding-top: 40px;
+    height: 380px;
+    padding-top: 50px;
     padding-right: 60px;
     padding-left: 40px;
     position: relative;
@@ -70,20 +74,23 @@ body{
 }
 
 h1{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-family: var(--lexend-deca);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2rem;
     text-transform: uppercase;
     color: var(--very-light-gray);
 }
 
 p{
     color: var(--transparent-white);
+    font-family: var(--big-shoulders-display);
+    line-height: 1.5em;
 }
-
-
 
 button{
     background-color: var(--very-light-gray);
+    font-family: var(--big-shoulders-display);
     padding: 15px 5px;
     border: 0;
     border-radius: 20px;
@@ -102,4 +109,47 @@ button{
 
 .luxury button{
     color: var(--very-dark-cyan);
+}
+
+.sedans button:hover{
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray); 
+}
+
+.suv button:hover{
+    background-color: var(--dark-cyan);
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray); 
+}
+
+.luxury button:hover{
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray); 
+}
+
+@media screen and (min-width:1024px){
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cards{
+        flex-direction: row;
+        max-width: 1440px;
+    }
+
+    .sedans, .suv, .luxury{
+    max-width: 200px;
+
+    }
+
+    .sedans{
+        border-radius: 10px 0 0 10px;
+    }
+
+    .luxury{
+        border-radius: 0 10px 10px 0;
+    }
 }
