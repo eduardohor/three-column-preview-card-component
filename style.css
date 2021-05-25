@@ -130,14 +130,12 @@ button{
 }
 
 @media screen and (min-width:1024px){
-    body{
-        display: flex;
-        justify-content: center;
-    }
+
     
     .cards{
         flex-direction: row;
-        max-width: 1440px;
+        justify-content: center;
+        align-items: center;
     }
 
     .sedans, .suv, .luxury{
