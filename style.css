@@ -25,7 +25,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .cards{
@@ -129,6 +128,10 @@ button{
 
 @media screen and (min-width:1024px){
 
+    main{
+        height: 100vh;
+    }
+    
     .cards{
         flex-direction: row;
     }
